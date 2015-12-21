@@ -1,0 +1,20 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+To initialise the repo you use the command: git init (in the relevant dir)
+Initialising a new repo creates a new .git dir for tracking file metadata
+Initially there are no commits and no tracked files in the repo
+
+How is the staging area different from the working directory and the 
+repository? What value do you think it offers?
+
+The working directory is just an ordinary directory, containing files.
+The repository bundles files together and records metadata about their
+history in a newly created .git folder (within the working directory).
+The staging area allows you to control the manner in which files from the 
+working directory are added to the repository. This control allows one or 
+more files that are logically separate from the other files in the working 
+directory to be added to the repository as part of separate commits.  Also,
+you can choose to add only a subset of the files in the working directory
+to the repo.
+
+
