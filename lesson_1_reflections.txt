@@ -1,0 +1,54 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+If a file that was previously working correctly stops doing so after changes
+are made to it, then the changes must contain a bug.  Viewing a diff between 
+the old and new versions of the file will identify the changes that were made,
+which can then be reviewed to identify which of them introduced the bug.
+
+How could having easy access to the entire history of a file make you a more 
+efficient programmer in the long term?
+
+1. Finding bugs
+2. Being able to easily backtrack to a working version of the software
+3. Access to old code, that may have been changed in the current production
+   version, but may be reusable in another project
+
+What do you think are the pros and cons of manually choosing when to create a 
+commit, like you do in Git, vs having versions automatically saved, like Google 
+Docs does?
+
+Pros:
+Flexibility. Can ensure that each commit reflects one clear, logical change in 
+its entirety and that the code is an executable state each time a new version 
+is saved.
+Cons:
+Requires conscious action by programmer. Risk of losing work if your computer 
+crashes and you haven't saved your work recently.
+
+Why do you think some version control systems, like Git, allow saving multiple 
+files in one commit, while others, like Google Docs, treat each file separately?
+
+When a series of files are interrelated, it makes sense to save changes in them
+simultaneously.  When a series of files are independent of each other, saving
+each file separately makes more sense.
+
+How can you use the commands git log and git diff to view the history of files?
+
+When in a directory containing a Git repository, the command "git log" generates 
+a list of commits made to the repository.
+
+Having identified a particular commit that you are interested in, you can view 
+the changes to the code made in that commit by using the command: "git diff <ID 
+of previous commit> <ID of commit of interest>"
+
+How might using version control make you more confident to make changes that 
+could break something?
+
+Using the git checkout <commit_ID> command, you can always revert to using a 
+previous version of the repository (in which things were not broken!)
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+Future software projects.
+
