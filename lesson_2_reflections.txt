@@ -58,6 +58,17 @@ branch that were made since the two branches diverged.  The label of the other
 branch is now redundant and can be deleted; all commits on that branch can now
 be reached from the continuing checked-out branch.
 
+What are the pros and cons of Git’s automatic merging vs. always doing merges 
+manually?
 
+Automatic merging of two branches is handy, when it is possible.  However,
+sometimes there will be ambiguity about what changes should be reflected in the
+commit arising from the merge.  This tends to occur when changes have been made
+to the same part of the code in both branches.  In this case, a merge conflict
+is thrown by git and a manual merging of that part of the code base is required.
+In the file subject to conflict, Git incorporates special lines to show the
+common ancestor code and the conflicting code in each branch.  This makes
+resolving the conflict manually easier by facilitating comparison of the two
+sets of changes.
 
 
