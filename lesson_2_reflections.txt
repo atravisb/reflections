@@ -17,4 +17,47 @@ directory to be added to the repository as part of separate commits.  Also,
 you can choose to add only a subset of the files in the working directory
 to the repo.
 
+How can you use the staging area to make sure you have one commit per logical 
+change?
+
+Running the command "git diff staged" compares the contents of the staging
+area to the most recent commit. Reviewing these differences allows you to 
+check that only one logical change is being made when a commit is run.  Also,
+you select which files to add to the staging area: so if you have changed
+multiple files since your last commit, but the changes in each file are not
+logically related, you can choose to stage only one of the files before
+committing.
+
+What are some situations when branches would be helpful in keeping your 
+history organized? How would branches help?
+
+Branches are not necessary for things such as bug fixes, changes to
+documentation or new basic features. But, in trying out a new experimental
+feature, of reasonable size, branching is a useful tool.  By adding a branch
+in this situation, you can continue to modify the master version of he software
+while using the branch to experiment with the larger new feature.  If the
+experiment is successful, its branch can be merged with the master branch
+later.  Otherwise, it can be easily discarded, with work just continuing on
+the master branch unaffected by the unsuccessful branch experiment.
+
+How do the diagrams help you visualize the branch structure?
+
+Branch diagrams help to visualise the structure of the code.  Such diagrams
+show the various branches in the code and the parent for each commit.  They can
+be used to identify reachable and unreachable commits and to see which branches
+a new commit will affect.
+
+What is the result of merging two branches together? Why do we represent it in 
+the diagram the way we do?
+
+Merging two branches is shown in a branch diagram as a new commit with two
+parents: the last commit of each of the merged branches.  After merging, the
+branch that was checked out at the time of the merge will incorporate all the
+commits that were previously on its branch, plus as all changes on the other
+branch that were made since the two branches diverged.  The label of the other
+branch is now redundant and can be deleted; all commits on that branch can now
+be reached from the continuing checked-out branch.
+
+
+
 
