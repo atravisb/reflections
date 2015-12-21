@@ -1,4 +1,17 @@
-When would you want to use a remote repository rather than keeping all your work local?
+When would you want to use a remote repository rather than keeping all your 
+work local?
 
-Using a remote repository would be handy when collaborating on a project with other
-people or if you wanted to work on a project from different computers.
+Using a remote repository would be handy when collaborating on a project with 
+other people or if you wanted to work on a project from different computers.
+
+Why might you want to always pull changes manually rather than having Git 
+automatically stay up-to-date with your remote repository?
+
+push = sending local repo changes to GitHub
+pull = receiving GitHub changes in local repo
+Pulling manually allows for greater control in what you bring down into your
+local repo.  You only really need to update your local repo when you plan to
+work on it and might avoid unnecessary transfers that might occur if pulls
+were automated.
+
+
