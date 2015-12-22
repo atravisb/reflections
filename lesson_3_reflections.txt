@@ -44,4 +44,16 @@ differences between remote and local master.
 
 ANYTHING ELSE??
 
+How would you collaborate without using Git or GitHub? What would be easier, 
+and what would be harder?
+
+Without Git or GitHub, you would probably need to have a person who controlled
+the code for the project - distributing or making accessible a master version of 
+the code periodically (perhaps daily?)  The process would probably have a
+larger manual component and be more cumbersome than using Git and GitHub.
+Individuals working on the code would probably need to save their own versions
+manually as well in between accessing the latest master version.
+
+
+
 
