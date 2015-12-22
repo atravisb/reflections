@@ -14,4 +14,18 @@ local repo.  You only really need to update your local repo when you plan to
 work on it and might avoid unnecessary transfers that might occur if pulls
 were automated.
 
+Describe the differences between forks, clones, and branches. When would you 
+use one instead of another?
 
+Branching is undertaken on a single repository, with two or more branches
+sharing the same ancestor code.  You might undertake branching if you want to
+experiment with a new feature or try out some significant changes to your code,
+without the risk of breaking the existing code.
+Cloning involves making a copy of an entire repository.  You might do this to
+copy a GitHub repository down to your local computer or to make a new copy of
+an existing local repository in a different location on your computer.
+Forking is a form of cloning; it occurs on GitHub when one GitHub repository 
+is copied to create a new GitHub repository.  You fork to get a copy of the 
+code for an existing project on GitHub, without directly affecting that project 
+(although you may ultimately contribute your changes back to the original 
+codebase by way of a pull request.)
