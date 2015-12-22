@@ -29,3 +29,19 @@ is copied to create a new GitHub repository.  You fork to get a copy of the
 code for an existing project on GitHub, without directly affecting that project 
 (although you may ultimately contribute your changes back to the original 
 codebase by way of a pull request.)
+
+What is the benefit of having a copy of the last known state of the remote 
+stored locally?
+
+origin = remote
+master = local branch
+origin/master = local copy of last known state of the master branch on origin
+
+Since origin/master is a branch, after fetching the latest copy of it you can 
+merge it with your local master and then push this back to GitHub (incorporating
+any changes to master that have been made locally).  Can also git diff to see
+differences between remote and local master.
+
+ANYTHING ELSE??
+
+
