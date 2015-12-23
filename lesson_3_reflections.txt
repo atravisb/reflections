@@ -69,3 +69,6 @@ that other people working on the project can identify changes you've made and,
 if desired, review and approve the changes you make before adding them to the
 master branch.
 
+It is also useful when you are working solo on an experimental component of your
+project and don't want to risk breaking the main production version (master).
+
